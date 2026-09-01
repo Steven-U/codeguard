@@ -1,0 +1,11 @@
+{
+  "name": "enterprise-customer-billing-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proprietary internal billing engine",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.19.2",
+    "event-stream": "3.3.6"
+  }
+}

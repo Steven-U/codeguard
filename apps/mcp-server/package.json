@@ -1,0 +1,28 @@
+{
+  "name": "@codeguard/mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "codeguard-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@codeguard/types": "workspace:*",
+    "@codeguard/policy": "workspace:*",
+    "@codeguard/commitment": "workspace:*",
+    "@codeguard/scanner": "workspace:*",
+    "@codeguard/contract": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

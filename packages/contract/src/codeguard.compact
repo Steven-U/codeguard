@@ -1,0 +1,64 @@
+pragma language_version >= 0.22;
+
+import CompactStandardLibrary;
+
+// CodeGuard v1 — Confidential AI Agent Security Attestation & Guardrail Registry
+//
+// Proves that a local repository modification by an AI agent complied with an
+// enterprise-approved security policy (no hardcoded secrets, no prohibited licenses,
+// no blocked dependencies, passing tests) against a committed artifact hash.
+//
+// NEVER DISCLOSED TO LEDGER:
+// - Source code / prompts / agent context
+// - Secret strings or line numbers
+// - Full vulnerability findings
+
+export struct ScanWitness {
+  artifactHash: Bytes<32>;
+  policyHash: Bytes<32>;
+  scannerHash: Bytes<32>;
+  secretCount: Uint<16>;
+  licenseViolationCount: Uint<16>;
+  blockedDependencyCount: Uint<16>;
+  testsPassed: Boolean;
+}
+
+export ledger policyHash: Bytes<32>;
+export ledger scannerHash: Bytes<32>;
+export ledger lastArtifactHash: Bytes<32>;
+export ledger verificationCount: Uint<64>;
+export ledger attestedArtifacts: Map<Bytes<32>, Boolean>;
+
+witness getScanWitness(): ScanWitness;
+
+constructor(
+  initialPolicyHash: Bytes<32>,
+  initialScannerHash: Bytes<32>
+) {
+  policyHash = disclose(initialPolicyHash);
+  scannerHash = disclose(initialScannerHash);
+  verificationCount = disclose(0 as Uint<64>);
+}
+
+export circuit attest(artifactHash: Bytes<32>): [] {
+  const scan = getScanWitness();
+
+  // 1. Assert binding: the private scan MUST correspond to the public artifact commitment
+  assert(scan.artifactHash == artifactHash, "artifact commitment mismatch");
+
+  // 2. Assert policy binding: the private scan MUST evaluate against the registered policy and scanner
+  assert(scan.policyHash == policyHash, "policy hash mismatch");
+  assert(scan.scannerHash == scannerHash, "scanner hash mismatch");
+
+  // 3. Core Policy Constraints
+  assert(scan.secretCount == 0 as Uint<16>, "secrets detected");
+  assert(scan.licenseViolationCount == 0 as Uint<16>, "license violations detected");
+  assert(scan.blockedDependencyCount == 0 as Uint<16>, "blocked dependencies detected");
+  assert(scan.testsPassed, "test suite failed");
+
+  // 4. Update public state
+  const disclosedHash = disclose(artifactHash);
+  lastArtifactHash = disclosedHash;
+  attestedArtifacts.insert(disclosedHash, disclose(true));
+  verificationCount = disclose((verificationCount + 1) as Uint<64>);
+}

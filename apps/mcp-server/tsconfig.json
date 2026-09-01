@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "references": [
+    { "path": "../../packages/types" },
+    { "path": "../../packages/policy" },
+    { "path": "../../packages/commitment" },
+    { "path": "../../packages/scanner" },
+    { "path": "../../packages/contract" }
+  ],
+  "include": ["src/**/*"]
+}

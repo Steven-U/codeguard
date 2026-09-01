@@ -1,0 +1,33 @@
+{
+  "name": "@codeguard/contract",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "compact": "compact compile src/codeguard.compact src/managed/codeguard",
+    "test": "vitest run",
+    "build": "tsc --build && cp -Rf ./src/managed ./dist/managed 2>/dev/null || true",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@codeguard/types": "workspace:*",
+    "@codeguard/policy": "workspace:*",
+    "@codeguard/commitment": "workspace:*",
+    "@codeguard/scanner": "workspace:*",
+    "@midnight-ntwrk/compact-runtime": "0.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/codeguard.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAiCA;;;;;;;;;;;;;MASA,AAAA,MAqBC;;;;;cArBqB,cAAuB;;;;;;;;;;;;;;;;;;yCAAvB,cAAuB;;;;;;;;;wCAAvB,cAAuB;;;OAqB5C;;;;GAvBA;EAPD;;;;;UACE,mBAA4B;UAC5B,oBAA6B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAV/B;;;;;;;;;yEAAoC;IACpC;;;;;;;;;yEAAqC;IACrC;;;;;;;;;yEAA0C;IAC1C;;;;;;;;;yEAA0C;IAC1C;;;;;;;;;;yEAAyD;IAQvD;;;;;;;2HAAsB,mBAAiB;;yEAA7B;IACV;;;;;;;2HAAuB,oBAAkB;;yEAA9B;UACX,KAAiB;IAAjB;;;;;;;2HAAA,KAAiB;;yEAAA;;;;;;;GAClB;EATD,AAAA,iBAAsC;;0DAAtC,cAAsC;;;;;;;;;;;;;;GAAA;EAWtC,AAAA,SAqBC,4BArBqB,cAAuB;UACrC,MAAuB;0CAGtB,MAAI,eAAiB,cAAY;;0CAGjC,MAAI;kEAAe;;;;;;;;;;;uIAAU;;0CAC7B,MAAI;kEAAgB;;;;;;;;;;;uIAAW;;0CAG/B,MAAI;;0CACJ,MAAI;;0CACJ,MAAI;;4BACJ,MAAI;UAGL,eAAsC,GAAb,cAAY;IAC3C;;;;;;;2HAAmB,eAAa;;yEAAhB;IAChB;;;;;;;;;;2HAAyB,eAAa;;;;;;wEAArB;UACjB,KAAiB;;;;;6CAAa;;;;;;;;;;;kHAAiB;;;IAA/C;;;;;;;2HAAA,KAAiB;;yEAAA;;GAClB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAtCD;qCAAA;;;;;;;;;;;0GAAoC;KAAA;IACpC;qCAAA;;;;;;;;;;;0GAAqC;KAAA;IACrC;qCAAA;;;;;;;;;;;0GAA0C;KAAA;IAC1C;qCAAA;;;;;;;;;;;0GAA0C;KAAA;IAC1C;;;;;uCAAA;;;;;;;;;;;;;;;;4GAAyD;;;;;;uCAAzD;;;;;;;;;;;;4GAAyD;;;;;;;;;;;;;;uCAAzD;;;;;;;;;;;;;;;4GAAyD;;;;;;;;;;;;;;uCAAzD;;;;;;;;;;;;;;;;;4GAAyD;;;;;;;;;KAAA;;;;;;;;;;"
+}

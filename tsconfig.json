@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/types" },
+    { "path": "./packages/policy" },
+    { "path": "./packages/commitment" },
+    { "path": "./packages/scanner" },
+    { "path": "./packages/contract" },
+    { "path": "./apps/mcp-server" }
+  ]
+}

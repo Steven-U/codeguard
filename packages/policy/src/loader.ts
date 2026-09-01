@@ -1,0 +1,54 @@
+import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+import type { Policy } from '@codeguard/types';
+
+export function loadPolicyFromFile(filePath: string): Policy {
+  const absolutePath = resolve(process.cwd(), filePath);
+  if (!existsSync(absolutePath)) {
+    throw new Error(`Policy file not found: ${absolutePath}`);
+  }
+  const content = readFileSync(absolutePath, 'utf8');
+  const parsed = JSON.parse(content) as Policy;
+  if (!parsed.id || !parsed.rules) {
+    throw new Error(`Invalid policy format in file: ${absolutePath}`);
+  }
+  return parsed;
+}
+
+export function getDefaultPolicy(): Policy {
+  return {
+    id: "enterprise-v1",
+    name: "Enterprise AI Coding Standard v1",
+    version: 1,
+    description: "Standard corporate baseline: zero exposed secrets, no restrictive copyleft licenses, no blocked dependencies, passing tests required.",
+    rules: {
+      maxSecrets: 0,
+      maxLicenseViolations: 0,
+      maxBlockedDependencies: 0,
+      testsRequired: true,
+      prohibitedLicenses: [
+        "GPL-2.0",
+        "GPL-3.0",
+        "AGPL-3.0",
+        "SSPL",
+        "Commons-Clause",
+        "BUSL-1.1"
+      ],
+      blockedDependencies: [
+        "event-stream@3.3.6",
+        "flatmap-stream",
+        "ua-parser-js@0.7.29",
+        "coa@2.0.3",
+        "rc@1.2.9",
+        "node-ipc@10.1.1"
+      ],
+      secretPatterns: [
+        { id: "openai-key", name: "OpenAI API Key", pattern: "sk-[a-zA-Z0-9]{20,}" },
+        { id: "anthropic-key", name: "Anthropic API Key", pattern: "sk-ant-[a-zA-Z0-9_-]{20,}" },
+        { id: "aws-key", name: "AWS Access Key", pattern: "AKIA[0-9A-Z]{16}" },
+        { id: "generic-secret", name: "Generic Private Key / Secret", pattern: "-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----" },
+        { id: "github-token", name: "GitHub Token", pattern: "gh[pousr]_[A-Za-z0-9_]{36,}" }
+      ]
+    }
+  };
+}

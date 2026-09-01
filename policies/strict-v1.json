@@ -1,0 +1,42 @@
+{
+  "id": "strict-v1",
+  "name": "Strict Zero-Trust Compliance Policy v1",
+  "version": 1,
+  "description": "Zero tolerance security policy for sensitive fintech/cryptographic modules.",
+  "rules": {
+    "maxSecrets": 0,
+    "maxLicenseViolations": 0,
+    "maxBlockedDependencies": 0,
+    "testsRequired": true,
+    "prohibitedLicenses": [
+      "GPL-1.0",
+      "GPL-2.0",
+      "GPL-3.0",
+      "LGPL-2.1",
+      "LGPL-3.0",
+      "AGPL-3.0",
+      "SSPL",
+      "EUPL-1.2",
+      "Commons-Clause",
+      "BUSL-1.1"
+    ],
+    "blockedDependencies": [
+      "event-stream@3.3.6",
+      "flatmap-stream",
+      "ua-parser-js@0.7.29",
+      "coa@2.0.3",
+      "rc@1.2.9",
+      "node-ipc@10.1.1",
+      "colors@1.4.1",
+      "faker@6.6.6"
+    ],
+    "secretPatterns": [
+      { "id": "openai-key", "name": "OpenAI API Key", "pattern": "sk-[a-zA-Z0-9]{20,}" },
+      { "id": "anthropic-key", "name": "Anthropic API Key", "pattern": "sk-ant-[a-zA-Z0-9_-]{20,}" },
+      { "id": "aws-key", "name": "AWS Access Key", "pattern": "AKIA[0-9A-Z]{16}" },
+      { "id": "generic-secret", "name": "Generic Private Key / Secret", "pattern": "-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----" },
+      { "id": "github-token", "name": "GitHub Token", "pattern": "gh[pousr]_[A-Za-z0-9_]{36,}" },
+      { "id": "slack-token", "name": "Slack Token", "pattern": "xox[baprs]-[0-9a-zA-Z]{10,48}" }
+    ]
+  }
+}

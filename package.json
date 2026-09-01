@@ -1,0 +1,22 @@
+{
+  "name": "codeguard-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "vitest run",
+    "test:contract": "pnpm --filter @codeguard/contract test",
+    "test:scanner": "pnpm --filter @codeguard/scanner test",
+    "lint": "pnpm -r lint",
+    "typecheck": "tsc --build --verbose",
+    "mcp": "node apps/mcp-server/dist/index.js",
+    "web": "pnpm --filter @codeguard/web dev",
+    "demo:scan": "node demo/run-demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
