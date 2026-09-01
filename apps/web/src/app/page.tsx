@@ -1,99 +1,138 @@
 'use client';
 
 import React from 'react';
-import { Shield, Sparkles, Terminal, Lock, CheckCircle } from 'lucide-react';
+import { Shield, Terminal, Lock, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { InteractiveDemo } from '@/components/InteractiveDemo';
 
 export default function HomePage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-12">
-      {/* Header Section */}
-      <header className="text-center mb-12 space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-indigo-500/40 bg-indigo-950/40 text-indigo-300 text-xs font-semibold tracking-wide">
-          <Sparkles className="w-4 h-4 text-indigo-400" />
-          Midnight Buildathon Wave 1
+    <main className="max-w-6xl mx-auto px-4 py-10 space-y-10">
+      {/* Top Header */}
+      <header className="border-b border-zinc-800/80 pb-8 space-y-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-mono font-medium px-2 py-0.5 rounded bg-zinc-800 text-zinc-300 border border-zinc-700">
+                Midnight Buildathon Wave 1
+              </span>
+              <span className="text-xs font-mono text-zinc-500">
+                Akindo Hackathon
+              </span>
+            </div>
+            <h1 className="text-3xl font-bold tracking-tight text-zinc-100">
+              CodeGuard
+            </h1>
+            <p className="text-sm text-zinc-400 mt-1 max-w-2xl">
+              Confidential AI agent guardrail &amp; attestation protocol. Prove your coding agent satisfied enterprise security policies without disclosing source code, prompts, or vulnerability findings.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 font-mono text-xs">
+            <a
+              href="https://github.com/steven-u/codeguard"
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-1.5 rounded border border-zinc-700 bg-zinc-900 text-zinc-200 hover:bg-zinc-800 hover:text-white transition-colors flex items-center gap-1.5"
+            >
+              <span>Repository</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500" />
+            </a>
+            <a
+              href="https://docs.midnight.network"
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-1.5 rounded border border-zinc-700 bg-zinc-900 text-zinc-200 hover:bg-zinc-800 hover:text-white transition-colors flex items-center gap-1.5"
+            >
+              <span>Midnight Docs</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500" />
+            </a>
+          </div>
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400">
-            CodeGuard
-          </span>
-          <span className="text-slate-400 font-light block text-2xl md:text-3xl mt-2">
-            Confidential AI Agent Guardrail & Attestation Engine
-          </span>
-        </h1>
-
-        <p className="max-w-2xl mx-auto text-slate-400 text-base">
-          Prove your AI coding agent complied with strict security policies{' '}
-          <strong className="text-slate-200">without disclosing source code, prompts, or vulnerability findings</strong>{' '}
-          to third parties or public blockchains.
-        </p>
-
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs text-slate-300 font-mono">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800">
-            <Shield className="w-4 h-4 text-indigo-400" />
-            <span>Compact Smart Contract v0.23+</span>
+        {/* Technical Badges */}
+        <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono text-zinc-400">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800">
+            <Shield className="w-3.5 h-3.5 text-indigo-400" />
+            <span>Compact Circuit (v0.23+)</span>
           </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800">
-            <Terminal className="w-4 h-4 text-cyan-400" />
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800">
+            <Terminal className="w-3.5 h-3.5 text-zinc-300" />
             <span>Model Context Protocol (MCP)</span>
           </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800">
-            <Lock className="w-4 h-4 text-emerald-400" />
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800">
+            <Lock className="w-3.5 h-3.5 text-emerald-400" />
             <span>Zero-Knowledge Proofs</span>
           </div>
         </div>
       </header>
 
-      {/* Interactive Demo Section */}
-      <section className="mb-16">
+      {/* Main Interactive Demo & Test Stepper */}
+      <section>
         <InteractiveDemo />
       </section>
 
-      {/* Architecture Overview */}
-      <section className="rounded-2xl border border-slate-800 bg-midnight-900/60 p-8 space-y-6">
-        <h2 className="text-2xl font-bold text-white">How CodeGuard Works with Midnight</h2>
+      {/* Technical Protocol Architecture */}
+      <section className="rounded-lg border border-zinc-800 bg-surface p-6 space-y-6">
+        <h2 className="text-base font-semibold text-zinc-100">
+          Protocol Architecture &amp; Execution Pipeline
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-5 rounded-xl bg-slate-950/50 border border-slate-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-indigo-950 text-indigo-400 flex items-center justify-center font-bold text-sm">
-              1
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="p-4 rounded border border-zinc-800/80 bg-zinc-950 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-zinc-400">01 / LOCAL SCAN</span>
+              <span className="text-[10px] font-mono text-zinc-500">MCP TOOL</span>
             </div>
-            <h4 className="font-semibold text-white text-base">Local MCP Interception</h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              When Cursor, Claude, or an autonomous coding agent suggests code modifications, CodeGuard MCP intercepts the diff and runs local zero-leakage safety scans (secrets, licenses, blocked deps, tests).
+            <p className="text-xs text-zinc-300 leading-relaxed">
+              When an AI agent modifies code, CodeGuard’s local MCP tool intercepts the change. It executes deterministic regex &amp; entropy checks for secrets, scans dependencies for copyleft licenses, and checks blocklisted packages.
             </p>
           </div>
 
-          <div className="p-5 rounded-xl bg-slate-950/50 border border-slate-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-purple-950 text-purple-400 flex items-center justify-center font-bold text-sm">
-              2
+          <div className="p-4 rounded border border-zinc-800/80 bg-zinc-950 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-zinc-400">02 / COMPACT PROOF</span>
+              <span className="text-[10px] font-mono text-zinc-500">ZK CIRCUIT</span>
             </div>
-            <h4 className="font-semibold text-white text-base">Local ZK Proof Generation</h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              The scan findings are packaged into a private witness. The local Midnight Proof Server evaluates the Compact circuit constraints against the committed artifact hash without disclosing raw files.
+            <p className="text-xs text-zinc-300 leading-relaxed">
+              The local Midnight Proof Server ingests the scan metrics as a private witness. The Compact circuit verifies that <code className="text-zinc-200">secretCount == 0</code> and that the evaluated policy matches the registered on-chain hash.
             </p>
           </div>
 
-          <div className="p-5 rounded-xl bg-slate-950/50 border border-slate-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-400 flex items-center justify-center font-bold text-sm">
-              3
+          <div className="p-4 rounded border border-zinc-800/80 bg-zinc-950 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-zinc-400">03 / LEDGER REGISTRY</span>
+              <span className="text-[10px] font-mono text-zinc-500">ATTESTATION</span>
             </div>
-            <h4 className="font-semibold text-white text-base">On-Chain Attestation Registry</h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Midnight verifies the zero-knowledge proof and updates the on-chain attestation registry. CI/CD or deployment gates can now trustlessly verify compliance before shipping.
+            <p className="text-xs text-zinc-300 leading-relaxed">
+              Midnight verifies the ZK proof on-chain and updates the public attestation counter. Downstream CI/CD deployment pipelines verify compliance without ever having access to the developer’s private source code.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Terminal Quickstart */}
+      <section className="rounded-lg border border-zinc-800 bg-surface p-6 space-y-4">
+        <h3 className="text-sm font-semibold text-zinc-200 flex items-center gap-2">
+          <Terminal className="w-4 h-4 text-zinc-400" />
+          Developer CLI Quickstart
+        </h3>
+        <div className="p-3.5 rounded bg-zinc-950 border border-zinc-800/80 font-mono text-xs text-zinc-300 space-y-2">
+          <div className="text-zinc-500"># 1. Run all 15 unit and circuit tests</div>
+          <div className="text-zinc-200">pnpm test</div>
+          <div className="text-zinc-500 pt-1"># 2. Run automated 2-minute demonstration</div>
+          <div className="text-zinc-200">pnpm demo:scan</div>
+          <div className="text-zinc-500 pt-1"># 3. Recompile Midnight Compact contract</div>
+          <div className="text-zinc-200">pnpm --filter @codeguard/contract compact</div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="mt-16 text-center text-xs text-slate-500 border-t border-slate-800/80 pt-8 flex items-center justify-between">
+      <footer className="pt-6 border-t border-zinc-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 font-mono gap-2">
         <div>
-          CodeGuard &copy; 2026 &bull; Built for Midnight Buildathon Wave 1
+          CodeGuard &bull; Confidential AI Agent Guardrail Engine
         </div>
-        <div className="font-mono text-slate-400">
-          Powered by Midnight Network (Zero-Knowledge Architecture)
+        <div>
+          Built for Midnight Network &bull; Apache-2.0
         </div>
       </footer>
     </main>

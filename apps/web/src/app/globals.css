@@ -3,30 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 6, 10, 18;
-  --background-end-rgb: 13, 21, 39;
+  --bg-main: #09090b;
+  --bg-surface: #121215;
+  --border-color: #27272a;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #f4f4f5;
+  background-color: var(--bg-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
-.glow-box {
-  box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.15);
+/* Custom scrollbar for clean data view */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-.glow-box-green {
-  box-shadow: 0 0 25px -5px rgba(34, 197, 94, 0.2);
+::-webkit-scrollbar-track {
+  background: #09090b;
 }
 
-.glow-box-red {
-  box-shadow: 0 0 25px -5px rgba(239, 68, 68, 0.2);
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
 }

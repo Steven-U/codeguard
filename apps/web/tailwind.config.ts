@@ -9,15 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        surface: {
+          DEFAULT: '#121215',
+          subtle: '#18181b',
+          muted: '#27272a'
+        },
         midnight: {
-          900: '#060a12',
-          800: '#0d1527',
-          700: '#14223d',
-          600: '#1e335a',
-          500: '#2d4d84',
-          accent: '#6366f1',
-          cyan: '#06b6d4',
-          glow: '#3b82f6',
+          DEFAULT: '#4f46e5',
+          dark: '#3730a3'
         }
       }
     },
