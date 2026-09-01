@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Shield, Sparkles, Terminal, Github, Lock, CheckCircle } from 'lucide-react';
+import { Shield, Sparkles, Terminal, Lock, CheckCircle } from 'lucide-react';
 import { InteractiveDemo } from '@/components/InteractiveDemo';
 
 export default function HomePage() {
