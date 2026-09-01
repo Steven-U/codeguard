@@ -1,0 +1,194 @@
+.agents/skills/1am-wallet/SKILL.md
+  h_28a18529cf55a2 1-916
+.agents/skills/android-example-voting/SKILL.md
+  h_28a18529cf55a2 1-2347
+.agents/skills/compact/SKILL.md
+  h_28a18529cf55a2 1-557
+.agents/skills/dynamic-midnight-wallet/SKILL.md
+  h_28a18529cf55a2 1-510
+.agents/skills/example-counter/SKILL.md
+  h_28a18529cf55a2 1-1663
+.agents/skills/example-hello-world/SKILL.md
+  h_28a18529cf55a2 1-746
+.agents/skills/example-leaderboard-dapp/SKILL.md
+  h_28a18529cf55a2 1-232
+.agents/skills/example-locker-dapp/SKILL.md
+  h_28a18529cf55a2 1-735
+.agents/skills/example-payment-dapp/SKILL.md
+  h_28a18529cf55a2 1-436
+.agents/skills/example-private-party-dapp/SKILL.md
+  h_28a18529cf55a2 1-1143
+.agents/skills/example-private-reserve-auction-dapp/SKILL.md
+  h_28a18529cf55a2 1-1394
+.agents/skills/example-zk-loan-application/SKILL.md
+  h_28a18529cf55a2 1-411
+.agents/skills/indexer/SKILL.md
+  h_28a18529cf55a2 1-768
+.agents/skills/midnight-consensus/SKILL.md
+  h_28a18529cf55a2 1-116
+.agents/skills/midnight-cryptography/SKILL.md
+  h_28a18529cf55a2 1-113
+.agents/skills/midnight-environment-setup/SKILL.md
+  h_28a18529cf55a2 1-245
+.agents/skills/midnight-js/SKILL.md
+  h_28a18529cf55a2 1-626
+.agents/skills/midnight-onchain-logic/SKILL.md
+  h_28a18529cf55a2 1-121
+.agents/skills/midnight-p2p-networking/SKILL.md
+  h_28a18529cf55a2 1-153
+.agents/skills/midnight-rpc/SKILL.md
+  h_28a18529cf55a2 1-170
+.agents/skills/midnight-security/SKILL.md
+  h_28a18529cf55a2 1-426
+.agents/skills/midnight-storage/SKILL.md
+  h_28a18529cf55a2 1-129
+.agents/skills/midnight-transactions/SKILL.md
+  h_28a18529cf55a2 1-135
+.agents/skills/midnightskill/SKILL.md
+  h_28a18529cf55a2 1-159
+.agents/skills/multinetwork/SKILL.md
+  h_28a18529cf55a2 1-691
+.agents/skills/nft/SKILL.md
+  h_28a18529cf55a2 1-348
+.agents/skills/react-wallet-connector/SKILL.md
+  h_28a18529cf55a2 1-488
+.agents/skills/testing/SKILL.md
+  h_28a18529cf55a2 1-306
+.agents/skills/token-transfers/SKILL.md
+  h_28a18529cf55a2 1-551
+.agents/skills/why-midnight/SKILL.md
+  h_28a18529cf55a2 1-103
+.claude/skills/1am-wallet
+  h_28a18529cf55a2 1
+.claude/skills/android-example-voting
+  h_28a18529cf55a2 1
+.claude/skills/compact
+  h_28a18529cf55a2 1
+.claude/skills/dynamic-midnight-wallet
+  h_28a18529cf55a2 1
+.claude/skills/example-counter
+  h_28a18529cf55a2 1
+.claude/skills/example-hello-world
+  h_28a18529cf55a2 1
+.claude/skills/example-leaderboard-dapp
+  h_28a18529cf55a2 1
+.claude/skills/example-locker-dapp
+  h_28a18529cf55a2 1
+.claude/skills/example-payment-dapp
+  h_28a18529cf55a2 1
+.claude/skills/example-private-party-dapp
+  h_28a18529cf55a2 1
+.claude/skills/example-private-reserve-auction-dapp
+  h_28a18529cf55a2 1
+.claude/skills/example-zk-loan-application
+  h_28a18529cf55a2 1
+.claude/skills/indexer
+  h_28a18529cf55a2 1
+.claude/skills/midnight-consensus
+  h_28a18529cf55a2 1
+.claude/skills/midnight-cryptography
+  h_28a18529cf55a2 1
+.claude/skills/midnight-environment-setup
+  h_28a18529cf55a2 1
+.claude/skills/midnight-js
+  h_28a18529cf55a2 1
+.claude/skills/midnight-onchain-logic
+  h_28a18529cf55a2 1
+.claude/skills/midnight-p2p-networking
+  h_28a18529cf55a2 1
+.claude/skills/midnight-rpc
+  h_28a18529cf55a2 1
+.claude/skills/midnight-security
+  h_28a18529cf55a2 1
+.claude/skills/midnight-storage
+  h_28a18529cf55a2 1
+.claude/skills/midnight-transactions
+  h_28a18529cf55a2 1
+.claude/skills/midnightskill
+  h_28a18529cf55a2 1
+.claude/skills/multinetwork
+  h_28a18529cf55a2 1
+.claude/skills/nft
+  h_28a18529cf55a2 1
+.claude/skills/react-wallet-connector
+  h_28a18529cf55a2 1
+.claude/skills/testing
+  h_28a18529cf55a2 1
+.claude/skills/token-transfers
+  h_28a18529cf55a2 1
+.claude/skills/why-midnight
+  h_28a18529cf55a2 1
+agent/skills/1am-wallet/SKILL.md
+  h_28a18529cf55a2 1-914
+agent/skills/android-example-voting/SKILL.md
+  h_28a18529cf55a2 1-2345
+agent/skills/compact/SKILL.md
+  h_28a18529cf55a2 1-555
+agent/skills/dynamic-midnight-wallet/SKILL.md
+  h_28a18529cf55a2 1-503
+agent/skills/example-counter/SKILL.md
+  h_28a18529cf55a2 1-1661
+agent/skills/example-hello-world/SKILL.md
+  h_28a18529cf55a2 1-744
+agent/skills/example-leaderboard-dapp/SKILL.md
+  h_28a18529cf55a2 1-219
+agent/skills/example-locker-dapp/SKILL.md
+  h_28a18529cf55a2 1-725
+agent/skills/example-payment-dapp/SKILL.md
+  h_28a18529cf55a2 1-425
+agent/skills/example-private-party-dapp/SKILL.md
+  h_28a18529cf55a2 1-1131
+agent/skills/example-private-reserve-auction-dapp/SKILL.md
+  h_28a18529cf55a2 1-1382
+agent/skills/example-zk-loan-application/SKILL.md
+  h_28a18529cf55a2 1-398
+agent/skills/indexer/SKILL.md
+  h_28a18529cf55a2 1-766
+agent/skills/midnight-consensus/SKILL.md
+  h_28a18529cf55a2 1-113
+agent/skills/midnight-cryptography/SKILL.md
+  h_28a18529cf55a2 1-110
+agent/skills/midnight-environment-setup/SKILL.md
+  h_28a18529cf55a2 1-238
+agent/skills/midnight-js/SKILL.md
+  h_28a18529cf55a2 1-624
+agent/skills/midnight-onchain-logic/SKILL.md
+  h_28a18529cf55a2 1-118
+agent/skills/midnight-p2p-networking/SKILL.md
+  h_28a18529cf55a2 1-150
+agent/skills/midnight-rpc/SKILL.md
+  h_28a18529cf55a2 1-167
+agent/skills/midnight-security/SKILL.md
+  h_28a18529cf55a2 1-424
+agent/skills/midnight-storage/SKILL.md
+  h_28a18529cf55a2 1-126
+agent/skills/midnight-transactions/SKILL.md
+  h_28a18529cf55a2 1-132
+agent/skills/midnightskill/SKILL.md
+  h_28a18529cf55a2 1-157
+agent/skills/multinetwork/SKILL.md
+  h_28a18529cf55a2 1-689
+agent/skills/nft/SKILL.md
+  h_28a18529cf55a2 1-346
+agent/skills/react-wallet-connector/SKILL.md
+  h_28a18529cf55a2 1-486
+agent/skills/testing/SKILL.md
+  h_28a18529cf55a2 1-304
+agent/skills/token-transfers/SKILL.md
+  h_28a18529cf55a2 1-549
+agent/skills/why-midnight/SKILL.md
+  h_28a18529cf55a2 1-101
+skills-lock.json
+  h_28a18529cf55a2 1-185
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "2bfd52aeb5c929d963154a5ce27b5c8a03afa195",
+  "prompts": {},
+  "humans": {
+    "h_28a18529cf55a2": {
+      "author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
