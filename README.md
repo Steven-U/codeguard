@@ -244,29 +244,40 @@ Queries public ledger for verification status of an artifact commitment hash.
 
 ---
 
+### Live Demo
+Experience the interactive privacy boundary and live ZK proof stepper:
+**[https://codeguard-web-ten.vercel.app](https://codeguard-web-ten.vercel.app)**
+
+---
+
 ## 8. Quickstart & 2-Minute Demo
 
 ### 1. Clone & Build Monorepo
 ```bash
-git clone https://github.com/steven-u/codeguard.git
+git clone https://github.com/Steven-U/codeguard.git
 cd codeguard
-npm install
-npm run build
+pnpm install
+pnpm build
 ```
 
-### 2. Run Compact Contract Tests
+### 2. Run All Tests (Contracts, Scanner, Policies)
 ```bash
-npm run test:contract
+pnpm test
 ```
 
 ### 3. Run Automated 2-Minute Demo Flow
 ```bash
-npm run demo:scan
+pnpm demo:scan
 ```
 
-### 4. Start Interactive Web Dashboard
+### 4. Recompile Midnight Compact Contract
 ```bash
-npm run web
+pnpm --filter @codeguard/contract compact
+```
+
+### 5. Start Interactive Web Dashboard
+```bash
+pnpm web
 # Open http://localhost:3000 to interact with the Privacy Boundary & Live Stepper
 ```
 
