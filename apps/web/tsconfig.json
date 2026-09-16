@@ -25,6 +25,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@codeguard/types": [
+        "../../packages/types/src/index.ts"
       ]
     }
   },

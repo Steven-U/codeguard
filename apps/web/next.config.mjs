@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: [
-    '@codeguard/types',
-    '@codeguard/policy',
-    '@codeguard/commitment',
-    '@codeguard/scanner',
-    '@codeguard/contract'
-  ]
+  transpilePackages: ['@codeguard/types']
 };
 
 export default nextConfig;
