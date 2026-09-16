@@ -4,7 +4,7 @@
 export const APP_CONFIG = {
   serviceName: "BillingEngine",
   port: 8080,
-  openAiApiKey: "sk-proj-DEMO99887766554433221100aaabbbcccdddeeefff",
+  openAiApiKey: "sk-mock-demo-key-never-active-00112233445566778899",
   awsAccessKey: "AKIAIOSFODNN7EXAMPLE",
   databaseUrl: "postgres://admin:supersecret@db.internal:5432/production"
 };

@@ -53,7 +53,7 @@ export function InteractiveDemo() {
           message: "Detected OpenAI API Key in src/config.ts",
           file: 'src/config.ts',
           line: 7,
-          snippet: 'openAiApiKey: "sk-proj-DEMO99887766554433221100aaabbbcccdddeeefff"'
+          snippet: 'openAiApiKey: "sk-mock-demo-key-never-active-00112233445566778899"'
         },
         {
           type: 'dependency',
