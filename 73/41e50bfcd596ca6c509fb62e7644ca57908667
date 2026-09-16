@@ -1,0 +1,14 @@
+apps/web/next-env.d.ts
+  h_3a1ee49cbdc3c0 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7341e50bfcd596ca6c509fb62e7644ca57908667",
+  "prompts": {},
+  "humans": {
+    "h_3a1ee49cbdc3c0": {
+      "author": "Steven-U <Steven-U@users.noreply.github.com>"
+    }
+  }
+}
