@@ -1,0 +1,18 @@
+apps/web/next.config.mjs
+  h_3a1ee49cbdc3c0 3
+apps/web/tsconfig.json
+  h_3a1ee49cbdc3c0 28-30
+packages/types/package.json
+  h_3a1ee49cbdc3c0 6-7,10-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "112d313db2a8e85873ad26b4396730d4a8caac11",
+  "prompts": {},
+  "humans": {
+    "h_3a1ee49cbdc3c0": {
+      "author": "Steven-U <Steven-U@users.noreply.github.com>"
+    }
+  }
+}
