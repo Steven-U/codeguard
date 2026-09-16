@@ -1,0 +1,14 @@
+README.md
+  h_3a1ee49cbdc3c0 247-252,257,259-260,263,265,270-275,278,280
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3fb750449c7b0ef2f4783ec4a62921465e0e85bd",
+  "prompts": {},
+  "humans": {
+    "h_3a1ee49cbdc3c0": {
+      "author": "Steven-U <Steven-U@users.noreply.github.com>"
+    }
+  }
+}
